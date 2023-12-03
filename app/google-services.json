@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618027939834",
+    "project_id": "book-banking",
+    "storage_bucket": "book-banking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618027939834:android:136c8694f3724288509643",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618027939834-jjd0njg74l83dca1vkfommefmv3gdp3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn07uz1fwmbvBiS-B-dfPQGWzDeapaLEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618027939834-jjd0njg74l83dca1vkfommefmv3gdp3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

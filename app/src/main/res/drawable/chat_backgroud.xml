@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item android:id="@+id/message_shape">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="20dp" /> <!-- Adjust the radius to control the roundness of corners -->
+            <solid
+                android:color="@color/darkwhite" /> <!-- Background color of the message bubble -->
+        </shape>
+    </item>
+
+</layer-list>

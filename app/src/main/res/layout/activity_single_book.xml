@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBook.singleBook">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="5dp"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="65dp"
+                >
+
+                <ImageView
+                    android:id="@+id/singleBookCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="#DDDDDD" />
+            </androidx.cardview.widget.CardView>
+            <View
+                android:id="@+id/divider_image"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/singleBookCover"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/singleBookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/convergence"
+                android:text="Book Title"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/convergence"
+                    android:text="Price : "
+                    android:textColor="#70949D"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/singleBookPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="259 "
+                    android:textColor="#70949D"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/singlebookOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/convergence"
+                    android:text="owner"
+                    android:textColor="#70949D"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/baseline_person_24"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/singleBookDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/anaheim"
+                android:text="Tell more About Book "
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/chatButton"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:backgroundTint="#70949D"
+                android:fontFamily="sans-serif-medium"
+                android:text="Chat"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

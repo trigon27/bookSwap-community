@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullToRefresh"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.myprofile.myProfile"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="5dp"
+                android:layout_marginTop="-38dp"
+                app:cardCornerRadius="38dp"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:background="#7EB3C8">
+
+                    <RelativeLayout
+                        android:id="@+id/RL_imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/profilePic"
+                                android:layout_width="190dp"
+                                android:layout_height="190dp"
+                                android:contentDescription="display picture"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/baseline_person_24"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar_profile_pic"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="110dp"
+                            android:elevation="10dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView_show_welcome"
+                        android:layout_width="333dp"
+                        android:layout_height="74dp"
+                        android:layout_below="@id/RL_imageView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/bungee"
+                        android:hint="loading"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#FDFDFD" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/RL_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/ic_profile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/baseline_person_24"
+                        android:contentDescription="name" />
+
+                    <TextView
+                        android:id="@+id/textView_show_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_profile"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/convergence"
+                        android:hint="loading"
+                        android:textColor="#70949D" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_name"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/RL_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/ic_email"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/baseline_email_24"
+                        android:contentDescription="email" />
+
+                    <TextView
+                        android:id="@+id/textView_show_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_email"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/convergence"
+                        android:hint="loading"
+                        android:textColor="#70949D" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_email"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/RL_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_email"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/ic_mobile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/baseline_phone_24"
+                        android:contentDescription="phone no" />
+
+                    <TextView
+                        android:id="@+id/textView_show_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_mobile"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/convergence"
+                        android:hint="loading"
+                        android:textColor="#70949D" />
+
+
+                </RelativeLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

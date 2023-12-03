@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.messenger.chatActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mycolour"
+        android:padding="5dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/back_ios_24"
+            app:tint="@android:color/white" />
+
+        <!-- User Profile Image (Rounded) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:id="@+id/userProfileImageView"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/backButton">
+            <ImageView
+                android:id="@+id/ownerProfileImageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/backButton"
+                android:contentDescription="Profile Image"
+                android:background="@drawable/roundshape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_person_24" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- Chat Room Name -->
+        <TextView
+            android:id="@+id/toolProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@id/userProfileImageView"
+            android:fontFamily="@font/convergence"
+            android:text="user name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- RecyclerView for Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messageInputLayout"
+        android:layout_below="@+id/topBar"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:padding="8dp"
+        tools:listitem="@layout/row_chat_left" />
+
+    <!-- Message Input Layout -->
+    <RelativeLayout
+        android:id="@+id/messageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="2dp">
+
+        <!-- Gallery Button -->
+        <ImageButton
+            android:id="@+id/galleryButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundsahpecolor"
+            android:contentDescription="Gallery"
+            android:src="@drawable/baseline_image_24" />
+
+        <!-- EditText for Typing Messages -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/sendButton"
+            android:layout_toEndOf="@+id/galleryButton"
+            android:background="@drawable/shape_edittext"
+            android:hint="Type a message"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="3"
+            android:minLines="1"
+            android:padding="10dp" />
+
+        <!-- Send Button -->
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/roundsahpecolor"
+            android:contentDescription="Send"
+            android:src="@drawable/baseline_send_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

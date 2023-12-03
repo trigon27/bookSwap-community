@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginEnd="100dp">
+
+    <!-- Message TextView -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_backgroud"
+        android:padding="8dp"
+        android:text="a;lskdf;awehfiuhfjcsvnc
+       jhewiuhfuwhfcaiufwebfiuwgef"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="56dp" >
+
+
+    </TextView>
+    <ImageView
+        android:id="@+id/messageImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/messageTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/book_cover"
+        android:contentDescription="Image Description" />
+
+    <!-- Timestamp TextView -->
+    <TextView
+        android:id="@+id/timestampTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageImageView"
+        android:layout_alignStart="@id/messageTextView"
+        android:layout_alignLeft="@id/messageTextView"
+        android:layout_marginTop="4dp"
+        android:text="12:34 PM"
+        android:textColor="#8C8C8C" />
+
+</RelativeLayout>
