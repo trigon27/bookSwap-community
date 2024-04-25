@@ -27,9 +27,13 @@ Follow these steps to get the BookSwap Community App up and running locally:
 4. Build and run the app on your Android device or emulator.
 
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+## Screenshots
+![Screenshot_2024-03-24-17-09-45-51_23867079ff02b911a225975be26e66ea](https://github.com/trigon27/bookSwap-community/assets/133361109/faf4352d-9200-4353-a8fe-ba4a2a3121fd)
 
----
+![Screenshot_2024-03-24-17-10-13-12_23867079ff02b911a225975be26e66ea](https://github.com/trigon27/bookSwap-community/assets/133361109/6e03a382-88ff-46b0-a26f-f0c9be6d9391)
+
+![Screenshot_2024-03-24-17-18-21-02_23867079ff02b911a225975be26e66ea](https://github.com/trigon27/bookSwap-community/assets/133361109/4ab54feb-fa1c-4ce2-ba40-c8b26b5dc4e2)
+
+![Screenshot_2024-03-24-17-17-50-32_23867079ff02b911a225975be26e66ea](https://github.com/trigon27/bookSwap-community/assets/133361109/4fd52f7f-c00a-4c58-824b-e177b754458a)
 
 **Happy Book Swapping!**
